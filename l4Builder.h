@@ -39,7 +39,7 @@ enum {
 #define Total_Number_Of_HLTGood2Plots			 4
 #define Total_Number_Of_BesMontinorPlots		 2
 #define Total_Number_Of_FixedTargetPlots		 6
-#define Total_Number_Of_FixedTargetMonitorPlots		 6
+#define Total_Number_Of_FixedTargetMonitorPlots		 5
 #define Total_Number_Of_HeavyFragmentPlots		 1
 #define Total_Number_Of_DiElectronPlots 		10
 #define Total_Number_Of_DiElectron2TwrPlots		10
