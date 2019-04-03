@@ -33,21 +33,6 @@ enum {
 	He4
 };
 
-#define Total_Number_Of_HltPlots 			46
-#define Total_Number_Of_BeamPlots			 3 
-#define Total_Number_Of_BesGoodPlots  			 5
-#define Total_Number_Of_HLTGood2Plots			 4
-#define Total_Number_Of_BesMontinorPlots		 2
-#define Total_Number_Of_FixedTargetPlots		 6
-#define Total_Number_Of_FixedTargetMonitorPlots		 5
-#define Total_Number_Of_HeavyFragmentPlots		 1
-#define Total_Number_Of_DiElectronPlots 		10
-#define Total_Number_Of_DiElectron2TwrPlots		10
-#define Total_Number_Of_DiPionPlots			 2
-#define Total_Number_Of_DiMuonPlots			14
-#define Total_Number_Of_UPCDiElectronPlots		 6
-#define Total_Number_Of_HltPlots_UPC			30
-
 class l4Builder : public JevpBuilder {
 	public:
 		/**
@@ -58,20 +43,20 @@ class l4Builder : public JevpBuilder {
 		 * @see 
 		 * @author 
 		 */  
-		JevpPlot *HltPlots[Total_Number_Of_HltPlots];
-		JevpPlot *BeamPlots[Total_Number_Of_BeamPlots];
-		JevpPlot *BesGoodPlots[Total_Number_Of_BesGoodPlots];
-		JevpPlot *HLTGood2Plots[Total_Number_Of_HLTGood2Plots];
-		JevpPlot *BesMontinorPlots[Total_Number_Of_BesMontinorPlots];
-		JevpPlot *FixedTargetPlots[Total_Number_Of_FixedTargetPlots];
-		JevpPlot *FixedTargetMonitorPlots[Total_Number_Of_FixedTargetMonitorPlots];
-		JevpPlot *HeavyFragmentPlots[Total_Number_Of_HeavyFragmentPlots];
-		JevpPlot *DiElectronPlots[Total_Number_Of_DiElectronPlots];
-		JevpPlot *DiElectron2TwrPlots[Total_Number_Of_DiElectron2TwrPlots];
-		JevpPlot *DiPionPlots[Total_Number_Of_DiPionPlots];
-		JevpPlot *DiMuonPlots[Total_Number_Of_DiMuonPlots];
-		JevpPlot *UPCDiElectronPlots[Total_Number_Of_UPCDiElectronPlots];   
-		JevpPlot *HltPlots_UPC[Total_Number_Of_HltPlots_UPC];
+		JevpPlot *HltPlots[47];
+		JevpPlot *BeamPlots[3];
+		JevpPlot *BesGoodPlots[5];
+		JevpPlot *HLTGood2Plots[4];
+		JevpPlot *BesMontinorPlots[2];
+		JevpPlot *FixedTargetPlots[6];
+		JevpPlot *FixedTargetMonitorPlots[6];
+		JevpPlot *HeavyFragmentPlots[1];
+		JevpPlot *DiElectronPlots[10];
+		JevpPlot *DiElectron2TwrPlots[10];
+		JevpPlot *DiPionPlots[2];
+		JevpPlot *DiMuonPlots[14];
+		JevpPlot *UPCDiElectronPlots[10];   
+		JevpPlot *HltPlots_UPC[30];
 		PlotHisto *ph;
 
 		l4Builder(JevpServer *parent=NULL) : JevpBuilder(parent) {
@@ -375,7 +360,9 @@ class l4Builder : public JevpBuilder {
 		TH1D *hVzvpd;
 		TH1D *hVzDiff;
 
-		/*   TH3D *hMatchannel3D ; */
+                TH2D *hVertexRZ;    
+
+                /*   TH3D *hMatchannel3D ; */
 
 		TH2F *hVzvpd_Vz_UPC ;
 		TH1D *hVzDiff_UPC;
